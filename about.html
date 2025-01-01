@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>אודות המועדון</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .grid-cols-2 {
+                grid-template-columns: 1fr;
+            }
+            .text-lg {
+                font-size: 1rem;
+            }
+            .text-4xl {
+                font-size: 2rem;
+            }
+            .text-3xl {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
     <header class="bg-green-900 py-4">
-        <nav class="container mx-auto flex justify-between items-center" aria-label="תפריט ניווט">
+        <nav class="container mx-auto flex flex-wrap justify-between items-center" aria-label="תפריט ניווט">
             <a href="index.html" class="text-lg font-bold text-white" aria-label="חזרה לדף הבית">מועדון היין הישראלי</a>
-            <ul class="flex items-center space-x-4 rtl:space-x-reverse" role="menu">
+            <ul class="flex flex-wrap items-center space-x-4 rtl:space-x-reverse text-center" role="menu">
                 <li><a href="index.html" class="text-gray-300 hover:text-white" role="menuitem">דף הבית</a></li>
                 <li><a href="#about" class="text-gray-300 hover:text-white" role="menuitem">אודות</a></li>
                 <li><a href="#founders" class="text-gray-300 hover:text-white" role="menuitem">המייסדים</a></li>
