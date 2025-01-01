@@ -14,27 +14,6 @@
             display: none;
         }
     </style>
-    <script>
-        function validateForm(event) {
-            event.preventDefault();
-            const emailInput = document.getElementById('email');
-            const emailValue = emailInput.value;
-            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-            if (!emailPattern.test(emailValue)) {
-                alert('אנא הזן כתובת דואר אלקטרוני תקינה.');
-                return;
-            }
-
-            const modal = document.getElementById('successModal');
-            modal.classList.remove('hidden');
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('successModal');
-            modal.classList.add('hidden');
-        }
-    </script>
 </head>
 <body class="bg-gray-900 text-gray-100">
     <header class="bg-green-900 py-4">
@@ -46,6 +25,7 @@
                 <li><a href="#wines" class="text-gray-300 hover:text-white" role="menuitem">יינות</a></li>
                 <li><a href="#events" class="text-gray-300 hover:text-white" role="menuitem">אירועים</a></li>
                 <li><a href="#join" class="text-gray-300 hover:text-white" role="menuitem">הצטרפות למועדון</a></li>
+                <li><a href="about.html" class="text-gray-300 hover:text-white" role="menuitem">אודות המייסדים</a></li>
             </ul>
         </nav>
     </header>

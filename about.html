@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות המועדון</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="bg-green-900 py-4">
+        <nav class="container mx-auto flex justify-between items-center" aria-label="תפריט ניווט">
+            <a href="index.html" class="text-lg font-bold text-white" aria-label="חזרה לדף הבית">מועדון היין הישראלי</a>
+            <ul class="flex items-center space-x-4 rtl:space-x-reverse" role="menu">
+                <li><a href="index.html" class="text-gray-300 hover:text-white" role="menuitem">דף הבית</a></li>
+                <li><a href="#about" class="text-gray-300 hover:text-white" role="menuitem">אודות</a></li>
+                <li><a href="#founders" class="text-gray-300 hover:text-white" role="menuitem">המייסדים</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mx-auto py-8">
+        <section id="about" class="mb-8" tabindex="0" aria-labelledby="about-title">
+            <h1 id="about-title" class="text-4xl font-bold text-green-400 mb-4">אודות המועדון</h1>
+            <p class="text-lg mb-4">מועדון היין הישראלי הוקם בשנת 2010 מתוך חזון ליצור קהילה מאוחדת לחובבי יין ברחבי הארץ. המועדון שואף לקדם את תרבות היין המקומית, להעמיק את הידע של חברי המועדון על יין, ולאפשר חוויות ייחודיות סביב טעימות, סדנאות ואירועים חברתיים.</p>
+            <p class="text-lg mb-4">עם השנים, הפך המועדון למרכז מוביל של חובבי יין בארץ, המשלב למידה על ההיסטוריה של היין הישראלי, מגידול ענבים בימי המקרא ועד לתעשיית היין המשגשגת של ימינו, יחד עם חוויות מרגשות כמו סיורים ביקבים, אירועי יין מיוחדים ועוד.</p>
+            <p class="text-lg">החברים במועדון נהנים מגישה לאירועים בלעדיים, טעימות של יינות נדירים ומפגשים עם אנשי מקצוע מובילים בתעשייה, כל זאת באווירה חמה ומזמינה.</p>
+        </section>
+        <section id="founders" class="mb-8" tabindex="0" aria-labelledby="founders-title">
+            <h2 id="founders-title" class="text-3xl font-bold text-green-400 mb-4">המייסדים</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-center">
+                    <img src="./imgs/eran.jpeg" alt="תמונה של המייסד הראשון" class="w-32 h-32 mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-bold text-green-300">ערן חצור</h3>
+                    <p class="text-gray-200">ערן חצור, חובב יין ותיק, הביא את תשוקתו לתרבות היין למועדון מתוך חזון לחבר אנשים סביב אהבת היין. אורי מתמחה בהיסטוריה של היין הישראלי ומוביל סיורים חווייתיים ביקבים ברחבי הארץ.</p>
+                </div>
+                <div class="text-center">
+                    <img src="./imgs/avital.jpeg" alt="תמונה של המייסדת השנייה" class="w-32 h-32 mx-auto rounded-full mb-4">
+                    <h3 class="text-xl font-bold text-green-300">אביטל פינקלשטיין</h3>
+                    <p class="text-gray-200">אביטל, מומחית בטעימות יין ותהליכי ייצור, שותפה לייסוד המועדון מתוך רצון להנגיש את עולם היין לכל אדם. נועה מובילה סדנאות מקצועיות על התאמת יין לאוכל ותהליכי ייצור מודרניים.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 py-4 text-center">
+        <p class="text-gray-400">&copy; 2025 מועדון היין הישראלי | כל הזכויות שמורות</p>
+    </footer>
+</body>
+</html>
